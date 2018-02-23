@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">GoogleTraining</string>
+    <string name="chapter_one_title">Chapter One: 你的第一个 App</string>
+    <string name="chapter_two_title">Chapter Two: 添加 Action Bar</string>
+    <string name="intent_msg">通过 Intent 启动另一个 Activity.</string>
+</resources>
