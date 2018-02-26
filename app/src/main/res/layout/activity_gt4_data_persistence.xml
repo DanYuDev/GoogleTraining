@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.coderlt.googletraining.sample.activity.GT4DataPersistenceActivity">
+
+    <EditText
+        android:id="@+id/account_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="账号"
+        android:layout_margin="5dp"
+         />
+    <EditText
+        android:id="@+id/password_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="密码"
+        android:layout_margin="5dp"
+        android:layout_below="@id/account_et"
+        />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/remember_check_box"
+        android:layout_below="@id/password_et"
+        android:layout_margin="5dp"/>
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登陆"
+        android:layout_margin="5dp"
+        android:layout_below="@id/password_et"
+        android:layout_toRightOf="@id/remember_check_box"/>
+</RelativeLayout>

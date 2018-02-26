@@ -14,7 +14,42 @@
         android:background="@android:color/holo_purple"
         android:text="@string/chapter_one_title"
         android:textAllCaps="false"
-        android:layout_margin="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/chapter_two_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_purple"
+        android:text="@string/chapter_two_title"
+        android:textAllCaps="false"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/chapter_three_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_purple"
+        android:text="@string/chapter_three_title"
+        android:textAllCaps="false"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/chapter_four_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_purple"
+        android:text="@string/chapter_four_title"
+        android:textAllCaps="false"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
         android:textColor="@android:color/white"/>
 
 </LinearLayout>

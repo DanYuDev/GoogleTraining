@@ -1,5 +1,8 @@
 package com.example.coderlt.googletraining.sample.activity;
 
+import android.app.Activity;
+import android.os.Build;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -16,7 +19,23 @@ public class GTIntentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gtintent);
         // 无效，不知道哪里出了问题，图表显示了，但是事件不响应
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setUpActionBar();
+    }
+
+    private void setUpActionBar(){
+        ActionBar mActionBar;
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB){
+            mActionBar = getSupportActionBar();
+            //mActionBar.setHomeButtonEnabled(true);
+            mActionBar.setDisplayHomeAsUpEnabled(true);
+        }
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return super.onSupportNavigateUp();
     }
 
     @Override
@@ -36,6 +55,9 @@ public class GTIntentActivity extends AppCompatActivity {
             case R.id.action_settings:
                 ToastUtil.showToast("Settings ...");
                 break;
+            // * 这里的返回键必须手动设置监听
+            case android.R.id.home:
+                finish();
             default:
                 break;
         }

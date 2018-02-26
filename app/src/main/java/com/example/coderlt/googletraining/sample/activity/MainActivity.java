@@ -10,7 +10,9 @@ import com.example.coderlt.googletraining.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private Button  chapterOneBtn,
-                    chapterTwoBtn;
+                    chapterTwoBtn,
+                    chapterThreeBtn,
+                    chapterFourBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent = new Intent(this,GTIntentActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.chapter_two_btn:
+                Intent intent1 = new Intent(this,LifeCycleActivity.class);
+                startActivity(intent1);
+                break;
+            case R.id.chapter_three_btn:
+                Intent intent2 = new Intent(this,FragmentUIActivity.class);
+                startActivity(intent2);
+                break;
+            case R.id.chapter_four_btn:
+                Intent intent3 = new Intent(this,GT4DataPersistenceActivity.class);
+                startActivity(intent3);
+                break;
             default:
                 break;
         }
@@ -36,8 +50,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initViews(){
         chapterOneBtn = findViewById(R.id.chapter_one_btn);
-
+        chapterTwoBtn = findViewById(R.id.chapter_two_btn);
+        chapterThreeBtn = findViewById(R.id.chapter_three_btn);
+        chapterFourBtn = findViewById(R.id.chapter_four_btn);
         // set on listener
         chapterOneBtn.setOnClickListener(this);
+        chapterTwoBtn.setOnClickListener(this);
+        chapterThreeBtn.setOnClickListener(this);
+        chapterFourBtn.setOnClickListener(this);
     }
 }

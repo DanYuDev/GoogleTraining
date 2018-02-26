@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">GoogleTraining</string>
     <string name="chapter_one_title">Chapter One: 你的第一个 App</string>
-    <string name="chapter_two_title">Chapter Two: 添加 Action Bar</string>
+    <string name="chapter_two_title">Chapter Two: Activity 的生命周期</string>
+    <string name="chapter_three_title">Chapter Three: Fragment 创建动态 UI</string>
+    <string name="chapter_four_title">Chapter Four: 数据保存</string>
+
     <string name="intent_msg">通过 Intent 启动另一个 Activity.</string>
 </resources>
