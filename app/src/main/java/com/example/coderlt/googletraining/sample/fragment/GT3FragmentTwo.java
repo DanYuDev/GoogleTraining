@@ -16,7 +16,7 @@ public class GT3FragmentTwo extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState){
-        View v = inflater.inflate(R.layout.fragment_two,null);
+        View v = inflater.inflate(R.layout.fragment_two,container,false);
         return v;
     }
 }

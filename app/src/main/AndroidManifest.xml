@@ -3,6 +3,7 @@
     package="com.example.coderlt.googletraining">
 
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".sample.application.MyApplication"
@@ -29,7 +30,10 @@
         <activity android:name=".sample.activity.LifeCycleActivity" />
         <activity android:name=".sample.activity.FragmentUIActivity" />
         <activity android:name=".sample.activity.GT4DataPersistenceActivity" />
-        <activity android:name=".sample.activity.GT4HomeActivity"></activity>
+        <activity android:name=".sample.activity.GT4HomeActivity" />
+        <activity android:name=".sample.activity.CalendarTestActivity" />
+        <activity android:name=".sample.activity.CourseActivity" />
+        <activity android:name=".sample.activity.ImplicitIntentActivity"></activity>
     </application>
 
 </manifest>

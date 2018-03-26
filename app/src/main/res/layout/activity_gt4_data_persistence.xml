@@ -34,5 +34,33 @@
         android:text="登陆"
         android:layout_margin="5dp"
         android:layout_below="@id/password_et"
-        android:layout_toRightOf="@id/remember_check_box"/>
+        android:layout_toRightOf="@id/remember_check_box"
+        android:background="@android:color/holo_orange_light"/>
+    <EditText
+        android:id="@+id/internal_file_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="创建一个 Internal 文件"
+        android:layout_below="@id/login_btn"
+        />
+    <EditText
+        android:id="@+id/internal_cache_file_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="创建一个 nternal 缓存文件"
+        android:layout_below="@id/internal_file_et"/>
+    <EditText
+        android:id="@+id/external_file_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="创建一个 External 文件"
+        android:layout_below="@id/internal_cache_file_et"/>
+    <Button
+        android:id="@+id/file_build_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击创建文件"
+        android:layout_below="@id/external_file_et"
+        android:background="@android:color/holo_red_light"
+        android:layout_margin="5dp"/>
 </RelativeLayout>

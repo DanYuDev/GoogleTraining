@@ -51,5 +51,37 @@
         android:layout_marginRight="5dp"
         android:layout_marginTop="5dp"
         android:textColor="@android:color/white"/>
-
+    <Button
+        android:id="@+id/calender_test_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:text="@string/chapter_calender_test"
+        android:textAllCaps="false"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/course_link_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:text="@string/course_link"
+        android:textAllCaps="false"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/implicit_intent_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:text="Implicit Intent"
+        android:textAllCaps="false"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/white"/>
 </LinearLayout>

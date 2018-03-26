@@ -6,4 +6,6 @@
     <string name="chapter_four_title">Chapter Four: 数据保存</string>
 
     <string name="intent_msg">通过 Intent 启动另一个 Activity.</string>
+    <string name="chapter_calender_test">Calender Of Android</string>
+    <string name="course_link">Course Link</string>
 </resources>

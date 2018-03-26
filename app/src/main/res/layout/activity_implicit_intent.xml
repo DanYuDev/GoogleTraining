@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.coderlt.googletraining.sample.activity.ImplicitIntentActivity">
+    <Button
+        android:id="@+id/dail_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dail"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/email_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_below="@id/dail_btn"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/browser_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Browser"
+        android:layout_below="@id/email_btn"
+        android:textAllCaps="false"/>
+</RelativeLayout>
