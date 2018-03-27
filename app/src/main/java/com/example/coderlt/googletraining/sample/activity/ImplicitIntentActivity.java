@@ -19,11 +19,13 @@ import java.util.List;
 public class ImplicitIntentActivity extends AppCompatActivity implements View.OnClickListener{
     private static final String TAG = "ImplicitIntentActivity";
     private static final int PICK_CONTACTS_REQUEST = 0x1111;
+    private static final int PICK_PHOTO = 0x2222;
     private Button dailBtn;
     private Button emailBtn;
     private Button browserBtn;
     private Button mapsBtn;
     private Button resultBtn;
+    private Button testCustomBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,12 +36,14 @@ public class ImplicitIntentActivity extends AppCompatActivity implements View.On
         browserBtn = findViewById(R.id.browser_btn);
         mapsBtn = findViewById(R.id.maps_btn);
         resultBtn = findViewById(R.id.start_for_result_btn);
+        testCustomBtn = findViewById(R.id.test_custom_action);
 
         dailBtn.setOnClickListener(this);
         emailBtn.setOnClickListener(this);
         browserBtn.setOnClickListener(this);
         mapsBtn.setOnClickListener(this);
         resultBtn.setOnClickListener(this);
+        testCustomBtn.setOnClickListener(this);
     }
 
     @Override
@@ -87,6 +91,11 @@ public class ImplicitIntentActivity extends AppCompatActivity implements View.On
                 resultIntent.setType(ContactsContract.CommonDataKinds.Phone.CONTENT_TYPE);
                 startActivityForResult(resultIntent,PICK_CONTACTS_REQUEST);
                 break;
+            case R.id.test_custom_action:
+                Intent callCustomIntent = new Intent(Intent.ACTION_SEND);
+                callCustomIntent.setType("image/*");
+                startActivityForResult(callCustomIntent,PICK_PHOTO);
+                break;
             default:
                 break;
         }
@@ -105,6 +114,12 @@ public class ImplicitIntentActivity extends AppCompatActivity implements View.On
                 String number = cursor.
                         getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
                 ToastUtil.showToast("Number is : "+number);
+            }
+        }else if(requestCode == PICK_PHOTO){
+            if(resultCode == RESULT_CANCELED){
+                ToastUtil.showToast("Canceled.");
+            }else{
+                ToastUtil.showToast("Photo was picked.");
             }
         }
     }

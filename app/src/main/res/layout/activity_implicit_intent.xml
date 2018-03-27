@@ -38,7 +38,18 @@
         android:layout_height="wrap_content"
         android:text="Start for result"
         android:layout_below="@id/maps_btn"
+        android:layout_margin="2dp"
         android:textAllCaps="false"
         android:background="@android:color/holo_orange_dark"
         android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/test_custom_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_for_result_btn"
+        android:layout_margin="2dp"
+        android:text="Call the custom activity"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_purple"
+        android:textAllCaps="false"/>
 </RelativeLayout>
