@@ -32,4 +32,13 @@
         android:text="Maps"
         android:layout_below="@id/browser_btn"
         android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/start_for_result_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start for result"
+        android:layout_below="@id/maps_btn"
+        android:textAllCaps="false"
+        android:background="@android:color/holo_orange_dark"
+        android:textColor="@android:color/white"/>
 </RelativeLayout>
