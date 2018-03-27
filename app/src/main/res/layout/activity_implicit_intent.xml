@@ -25,4 +25,11 @@
         android:text="Browser"
         android:layout_below="@id/email_btn"
         android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/maps_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Maps"
+        android:layout_below="@id/browser_btn"
+        android:textAllCaps="false"/>
 </RelativeLayout>

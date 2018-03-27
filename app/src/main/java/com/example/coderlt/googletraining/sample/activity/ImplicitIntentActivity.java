@@ -22,6 +22,7 @@ public class ImplicitIntentActivity extends AppCompatActivity implements View.On
     private Button dailBtn;
     private Button emailBtn;
     private Button browserBtn;
+    private Button mapsBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,10 +31,12 @@ public class ImplicitIntentActivity extends AppCompatActivity implements View.On
         dailBtn = findViewById(R.id.dail_btn);
         emailBtn = findViewById(R.id.email_btn);
         browserBtn = findViewById(R.id.browser_btn);
+        mapsBtn = findViewById(R.id.maps_btn);
 
         dailBtn.setOnClickListener(this);
         emailBtn.setOnClickListener(this);
         browserBtn.setOnClickListener(this);
+        mapsBtn.setOnClickListener(this);
     }
 
     @Override
@@ -71,6 +74,10 @@ public class ImplicitIntentActivity extends AppCompatActivity implements View.On
                 Intent webIntent = new Intent(Intent.ACTION_VIEW,webPage);
                 startActivity(webIntent);
                 break;
+            case R.id.maps_btn:
+                Uri mapsUri = Uri.parse("http://maps.google.com/maps?f=d&saddr=startLat%20startLng&daddr=endLat%20endLng&hl=en");
+                Intent mapsIntent = new Intent(Intent.ACTION_VIEW,mapsUri);
+                startActivity(mapsIntent);
             default:
                 break;
         }
